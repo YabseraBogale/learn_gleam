@@ -1,5 +1,10 @@
+import gleam/int
 import gleam/io
 
+fn sum(a: Int, b: Int) -> Int {
+  a + b
+}
+
 pub fn main() -> Nil {
-  io.println("Hello from add_number!")
+  sum(1, 2) |> int.to_string |> io.println
 }
